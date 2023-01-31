@@ -1,0 +1,26 @@
+html{
+  width: 100%;
+  //overflow: hidden;
+}
+body{
+  margin: 0;
+  padding: 0;
+  //overflow: hidden;
+  .container{
+    margin: 30px auto;
+
+    @media (min-width: @desktop_min){
+      width: 1200px;
+    }
+
+    @media (min-width: @tab_min) and (max-width: @tab_max){
+      width: auto;
+      margin: 30px 15px;
+    }
+
+    @media (min-width: 0px) and (max-width: @mob_max){
+      width: auto;
+      margin: 30px 15px;
+    }
+  }
+}
